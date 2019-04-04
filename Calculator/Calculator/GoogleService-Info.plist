@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>11242636407-3boskd0suq1mds9sh4sd8m7n44n8go43.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.11242636407-3boskd0suq1mds9sh4sd8m7n44n8go43</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBG3lHiuQEcNFrT80WohCLwcSsZiF4Hz9o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>11242636407</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.frknbyhn.Calculator</string>
+	<key>PROJECT_ID</key>
+	<string>secret-chat-app-25d62</string>
+	<key>STORAGE_BUCKET</key>
+	<string>secret-chat-app-25d62.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:11242636407:ios:f5efec88a24a60ab</string>
+	<key>DATABASE_URL</key>
+	<string>https://secret-chat-app-25d62.firebaseio.com</string>
+</dict>
+</plist>
