@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FirebaseAuth
 
-class CalculatorViewController: BaseViewController{
+class CalculatorViewController: UIViewController{
 
     
     @IBOutlet weak var answerTextField: UITextField!

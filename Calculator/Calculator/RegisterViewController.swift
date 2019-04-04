@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import CoreData
 
-class RegisterViewController: BaseViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -48,8 +48,6 @@ class RegisterViewController: BaseViewController {
                 print("SOOO Failed")
             }
         }
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
 
         loginEmailTextField.attributedPlaceholder = NSAttributedString(string: "Email Address", attributes: [NSAttributedString.Key.foregroundColor: UIColor(displayP3Red: 0.77, green: 1, blue: 0.01, alpha: 0.4)])
         loginPassTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor(displayP3Red: 0.77, green: 1, blue: 0.01, alpha: 0.4)])
@@ -59,12 +57,14 @@ class RegisterViewController: BaseViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         Auth.auth().signIn(withEmail: loginEmailTextField.text!, password: loginPassTextField.text!) { (user, error) in
+            
             if error == nil {
                 self.loginPassTextField.text = ""
                 self.loginEmailTextField.text = ""
                 let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "firstView") as! FirstViewController
-                self.navigationController?.pushViewController(vc, animated: true)
+                let ncncnc = UINavigationController(rootViewController: vc)
+                self.present(ncncnc, animated: true, completion: nil)
             }else{
                 let alertController = UIAlertController(title: "Hata", message: "Mailinizi veya şifrenizi yanlış girdiniz. Lütfen bilgilerinizi kontrol ederek tekrar deneyiniz", preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
@@ -73,6 +73,8 @@ class RegisterViewController: BaseViewController {
             }
         }
     }
+    
+    
     @IBAction func registerButtonClicked(_ sender: Any) {
         if passwordTextField.text != "" && emailTextField.text != ""{
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in

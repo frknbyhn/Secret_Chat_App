@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FirebaseAuth
 
-class FirstViewController: BaseViewController, UITextFieldDelegate {
+class FirstViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var passText: UITextField!
@@ -37,9 +37,6 @@ class FirstViewController: BaseViewController, UITextFieldDelegate {
                 let vc = storyboard.instantiateViewController(withIdentifier: "mainView") as! CalculatorViewController
                 navigationController?.pushViewController(vc, animated: true)
             }else{
-                let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "firstView") as! FirstViewController
-                navigationController?.pushViewController(vc, animated: true)
             }
         }catch{
                 print("SOOO Failed")
@@ -77,7 +74,6 @@ class FirstViewController: BaseViewController, UITextFieldDelegate {
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "mainView") as! CalculatorViewController
             let ncncnc = UINavigationController(rootViewController: vc)
-            ncncnc.isNavigationBarHidden = true
             self.present(ncncnc, animated: true, completion: nil)
         } catch {
             print("Failed saving")

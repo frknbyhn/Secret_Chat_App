@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F4D484D380740ADFD804D46 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8043E51951196822C99F88 /* Pods_Calculator.framework */; };
 		C20DA5722254AB2900F389A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C20DA5712254AB2900F389A2 /* GoogleService-Info.plist */; };
-		C22196F92255EB8500F799CE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22196F82255EB8500F799CE /* BaseViewController.swift */; };
 		C25B4292225645FF00569D9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25B4291225645FF00569D9A /* Constants.swift */; };
 		C27C60BD225499090080150E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C60BC225499090080150E /* AppDelegate.swift */; };
 		C27C60BF225499090080150E /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C60BE225499090080150E /* CalculatorViewController.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		7C8043E51951196822C99F88 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20DA5712254AB2900F389A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C22196F82255EB8500F799CE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C25B428D225642D600569D9A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		C25B4291225645FF00569D9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C27C60B9225499090080150E /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +102,6 @@
 				C27C60C6225499090080150E /* Assets.xcassets */,
 				C27C60C8225499090080150E /* LaunchScreen.storyboard */,
 				C27C60CB225499090080150E /* Info.plist */,
-				C22196F82255EB8500F799CE /* BaseViewController.swift */,
 				C27C60C3225499090080150E /* Calculator.xcdatamodeld */,
 				C20DA5712254AB2900F389A2 /* GoogleService-Info.plist */,
 			);
@@ -272,7 +269,6 @@
 				C27C60BD225499090080150E /* AppDelegate.swift in Sources */,
 				C2BDDDFC2254CC5A005809D4 /* RegisterViewController.swift in Sources */,
 				C27C60D2225499390080150E /* ChatViewController.swift in Sources */,
-				C22196F92255EB8500F799CE /* BaseViewController.swift in Sources */,
 				C27C60C5225499090080150E /* Calculator.xcdatamodeld in Sources */,
 				C25B4292225645FF00569D9A /* Constants.swift in Sources */,
 			);

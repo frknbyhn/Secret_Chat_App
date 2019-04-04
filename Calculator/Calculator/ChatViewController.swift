@@ -82,7 +82,7 @@ class ChatViewController: JSQMessagesViewController {
     {
         let defaults = UserDefaults.standard
         
-        let alert = UIAlertController(title: "Your Display Name", message: "Before you can chat, please choose a display name. Others will see this name when you send chat messages. You can change your display name again by tapping the navigation bar.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Your Display Name", message: "Before you can chat, please choose a display name. Others will see this name when you send chat messages.", preferredStyle: .alert)
         
         alert.addTextField { textField in
             
