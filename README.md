@@ -1,4 +1,4 @@
-# Secret_Chat_App
+# Secret Chat App
 Secret Chat App looking like a calculator. Use JSQMessagesViewController with Firebase Real Time Database
 
 For Login: 
